@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HBNB - Cities by States</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>States</h1>
+    <ul>
+        {% for state in states %}
+        <li>{{ state.id }}: <b>{{ state.name }}</b>
+            <ul>
+                {% for city in state.cities %}
+                <li>{{ city.id }}: <b>{{ city.name }}</b></li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

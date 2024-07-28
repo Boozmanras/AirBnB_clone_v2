@@ -1,0 +1,33 @@
+.filters {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.popover {
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.popover .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popover ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.popover li {
+    margin: 5px 0;
+}
+.popover {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+

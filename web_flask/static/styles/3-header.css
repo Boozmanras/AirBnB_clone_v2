@@ -1,0 +1,20 @@
+header {
+    background-color: #ff5a5f;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 40px;
+}
