@@ -2,6 +2,9 @@
 """A simple Flask web application."""
 from web_flask import app
 
+app = Flask(__name__)
+
+
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
     """Route that displays 'Hello HBNB!'."""
